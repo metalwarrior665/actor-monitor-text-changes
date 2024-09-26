@@ -1,0 +1,29 @@
+{
+    "title": "CheerioCrawler Template",
+    "type": "object",
+    "schemaVersion": 1,
+    "required": [
+        "fieldsToDiff"
+    ],
+    "properties": {
+        "runId": {
+            "title": "Run ID to compare (leave empty if used by webhook or integration)",
+            "type": "string",
+            "description": "ID of the old dataset to compare.",
+            "editor": "textfield"
+        },
+        "fieldToMapBy": {
+            "title": "Field to Map Items By",
+            "type": "string",
+            "description": "Field used to find which items should be matched for comparison. Usually some identifier like `url` or `id`.",
+            "editor": "textfield",
+            "default": "url"
+        },
+        "fieldsToDiff": {
+            "title": "Fields to Diff",
+            "type": "array",
+            "description": "Fields that will be compared between matched items. Usually fields like `text`, `description`, `markdown`.",
+            "editor": "stringList"
+        }
+    }
+}
