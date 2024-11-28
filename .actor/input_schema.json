@@ -5,6 +5,7 @@
     "required": [
         "fieldsToDiff"
     ],
+    "description": "This Actor is meant to be used as an integration for [Website Content Crawler](https://apify.com/apify/website-content-crawler) or similar Actors. It runs after every scraping run.",
     "properties": {
         "runId": {
             "title": "Run ID to compare (leave empty if used by webhook or integration)",
